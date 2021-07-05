@@ -1,0 +1,186 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(251,106,75), rgb(243,90,107));
+}
+
+.main {
+    position: absolute;
+    justify-content: center;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+    height: 100%;
+    min-height: 90vh;
+    border: solid 1px, darkslategray;
+    border-radius: 5px;
+    background-color: rgb(244,247,252);
+    padding: 10vh 3% 10% 3%;
+}
+
+@media only screen and (min-width: 600px) {
+    .app-container {
+        width: 50%;
+    }
+}
+
+.date-container{
+    font-size: larger;
+    border: solid 1px, darkslategray;
+    color: rgb(244,101,106);
+    padding-left: 0.5rem;
+}
+
+.input-container {
+    display: inline-flex;
+    margin: 3%;
+}
+
+input {
+    display: inline-flex;
+    border-radius: 3px;
+    line-height: 2rem;
+    border: solid 1px lightsteelblue;
+    width: 100%;
+    left: 0;
+    outline-color: rgb(0,117,255);
+}
+.userInputText {
+    padding-left: 1rem;
+    font-size: 3vh;
+}
+
+::placeholder {
+   font-style: italic;
+   font-weight: 400;
+   color: lightslategray;
+   font-size: 2.4vh;
+}
+
+@media only screen and (min-width: 350px) {
+    ::placeholder  {
+        width: 50%;
+        font-size: 3vh
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li, input, label  {
+ cursor: pointer;
+}
+
+li {
+ display: block;
+ line-height: 2.5rem;
+ border-radius: 3px;
+ margin: 0.5rem;
+ padding-left: 0.5rem;
+ background-color: rgb(224,232,245);
+ 
+}
+
+input.checkbox {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border: none;
+}
+
+label {
+    word-wrap: normal;
+}
+.note {
+    padding-left: 0.5rem;
+    font-size: smaller;
+    margin-bottom: 0;
+}
+
+.btn {
+    
+    border: none;
+    border-radius: 3px;
+    font-size: larger;
+    vertical-align: middle;
+    background-color: rgb(245,100,104);
+    color: rgb(236, 236, 236);
+    height: 2.5rem;
+    outline-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: rgb(175, 175, 175);
+    font-size: xx-large;
+    margin-left: 0.5rem;
+    width: 4rem;
+    transition: background-color 0.3s ease-out;
+}
+.btn-add:hover {
+    background-color: rgb(66, 66, 246);
+}
+
+
+.buttons {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: bottom;
+}
+
+.btn-show-hide-completed, .btn-clear-all-pending {
+    line-height: auto;
+    width: auto;
+    align-items: center;
+    margin: 0.5rem;
+    background-color: rgb(224,232,245);
+    color: rgb(0, 88, 189);
+    font-size: smaller;
+    font-weight: 600;
+}
+
+.btn-hidden {
+    visibility: hidden;
+    float: right; 
+    width: 0;
+    ;
+}
+
+li:hover > .btn-hidden {
+    visibility: visible;
+    transition:  0.2s ease-out ;
+    width: 3rem;    
+}
+
+.slide-in {
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+      
+}
+
+.completed-items-container {
+    text-decoration: line-through;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 1rem;
+}
+
+.note {
+    text-align: center;
+}

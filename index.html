@@ -1,13 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Cinema</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.59aef4b0229417bebb78.css"></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
-  <app-root></app-root>
-<script src="runtime.7b63b9fd40098a2e8207.js" defer></script><script src="polyfills.94daefd414b8355106ab.js" defer></script><script src="main.8437f51a2fe5a0d59ee0.js" defer></script></body>
+
+    <header></header>
+    <main>
+
+        <div class="app-container">
+
+            <div class="date-container">
+                <div class="day">Thursday</div>
+                <div class="date">1970.01.01.</div>
+            </div>
+            <div class="input-container">
+                <input class="userInputText" type="text" name="" id="" placeholder="Take the garbage out">
+                <button class="btn btn-add">+</button>
+            </div>
+            <p class="note pending-note">Time to chill! You have no todos.
+            <div class="pending-items-container">
+                <ul class="pending-items">
+                    
+                    <!-- <li><input class="checkbox" type="checkbox" name="" id="check-1">
+                        <label class="pending">First thing to do</label>
+                        <button class="btn btn-delete-item"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </li> -->
+                    
+                </ul>
+
+            </div>
+            <p class="note completed-note"></p>
+            <div class="completed-items-container">
+                <ul class="completed-items">
+
+                    <!-- <li><input class="checkbox" type="checkbox" name="" id="check-4" checked>
+                        <label class="completed">This is done already</label>
+                        <button class="btn btn-delete-item"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </li> -->
+
+
+                </ul>
+
+            </div>
+            <div class="buttons show-hide-clear">
+                <button class="btn btn-show-hide-completed">Hide Completed</button>
+                <button class="btn btn-clear-all-pending">Clear All</button>
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+    <footer></footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
 </html>
